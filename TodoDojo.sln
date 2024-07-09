@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoDojoServer", "TodoDojoServer\TodoDojoServer.csproj", "{8C607D3F-5AEE-42F2-99EE-789CF5F8547B}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "todo-dojo-client", "todo-dojo-client\todo-dojo-client.esproj", "{BF3F07F8-7C4A-4ECC-A8CC-64542B11805E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8C607D3F-5AEE-42F2-99EE-789CF5F8547B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C607D3F-5AEE-42F2-99EE-789CF5F8547B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C607D3F-5AEE-42F2-99EE-789CF5F8547B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C607D3F-5AEE-42F2-99EE-789CF5F8547B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF3F07F8-7C4A-4ECC-A8CC-64542B11805E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF3F07F8-7C4A-4ECC-A8CC-64542B11805E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF3F07F8-7C4A-4ECC-A8CC-64542B11805E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{BF3F07F8-7C4A-4ECC-A8CC-64542B11805E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF3F07F8-7C4A-4ECC-A8CC-64542B11805E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF3F07F8-7C4A-4ECC-A8CC-64542B11805E}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3C140484-6CEA-4A55-9FCA-9605B57532C0}
+	EndGlobalSection
+EndGlobal
