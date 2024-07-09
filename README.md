@@ -11,3 +11,6 @@ It's very early days
 * Connection to your google calendar
 * Topological sorting of tasks
 * Arranging tasks into relevant blocks - i.e. personal tasks to your personal schedule, business to your work schedule.
+
+## Security
+I've setup GPG signing - this amendment to the README.md is to confirm this is functioning as anticipated.
