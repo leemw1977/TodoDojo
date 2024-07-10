@@ -7,6 +7,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoDojoServer", "TodoDojoS
 EndProject
 Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "todo-dojo-client", "todo-dojo-client\todo-dojo-client.esproj", "{BF3F07F8-7C4A-4ECC-A8CC-64542B11805E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoDojo.Domain", "TodoDojo.Domain\TodoDojo.Domain.csproj", "{D0CF1506-4442-4E8B-A928-1B6C2590C574}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoDojo.Application", "TodoDojo.Application\TodoDojo.Application.csproj", "{0DCA12CE-D57A-49B6-A9FB-CB13313CB4BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoDojo.Infrastructure", "TodoDojo.Infrastructure\TodoDojo.Infrastructure.csproj", "{95479A1A-96EF-43BF-9982-7923FE6973B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoDojo.Dtos", "TodoDojo.Dtos\TodoDojo.Dtos.csproj", "{71D8A30D-E957-4C8D-B858-C14112A24C30}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +31,22 @@ Global
 		{BF3F07F8-7C4A-4ECC-A8CC-64542B11805E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF3F07F8-7C4A-4ECC-A8CC-64542B11805E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BF3F07F8-7C4A-4ECC-A8CC-64542B11805E}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{D0CF1506-4442-4E8B-A928-1B6C2590C574}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0CF1506-4442-4E8B-A928-1B6C2590C574}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0CF1506-4442-4E8B-A928-1B6C2590C574}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0CF1506-4442-4E8B-A928-1B6C2590C574}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DCA12CE-D57A-49B6-A9FB-CB13313CB4BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DCA12CE-D57A-49B6-A9FB-CB13313CB4BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DCA12CE-D57A-49B6-A9FB-CB13313CB4BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DCA12CE-D57A-49B6-A9FB-CB13313CB4BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95479A1A-96EF-43BF-9982-7923FE6973B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95479A1A-96EF-43BF-9982-7923FE6973B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95479A1A-96EF-43BF-9982-7923FE6973B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95479A1A-96EF-43BF-9982-7923FE6973B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71D8A30D-E957-4C8D-B858-C14112A24C30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71D8A30D-E957-4C8D-B858-C14112A24C30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71D8A30D-E957-4C8D-B858-C14112A24C30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71D8A30D-E957-4C8D-B858-C14112A24C30}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
