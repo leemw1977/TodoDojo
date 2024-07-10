@@ -10,7 +10,7 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://localhost:5091/weatherforecast');
+        const response = await fetch('https://localhost:7243/weatherforecast');
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
