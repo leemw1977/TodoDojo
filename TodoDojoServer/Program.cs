@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using TodoDojo.Infrastructure;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -16,7 +19,31 @@ builder.Services.AddCors(options =>
         });
 });
 
+// Set up dependency injection
+builder.Services.AddDbContext<PersistenceContext>(options =>
+        options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
+
 var app = builder.Build();
+
+
+// Apply migrations at startup
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    try
+    {
+        var context = services.GetRequiredService<PersistenceContext>();
+        context.Database.Migrate();
+    }
+    catch (Exception ex)
+    {
+        // Log the error or handle it as necessary
+        var logger = services.GetRequiredService<ILogger<Program>>();
+        logger.LogError(ex, "An error occurred while migrating the database.");
+        throw;
+    }
+}
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

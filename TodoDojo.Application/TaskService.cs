@@ -18,13 +18,12 @@ namespace TodoDojo.Application
 
             return task == null ? null : new TaskDto(
                 task.Id,
-                task.TaskName.Value,
-                task.DueDate ?? DateTime.UtcNow,
+                task.TaskName,
+                task.Deadline ?? DateTime.UtcNow,
                 task.Priority.ToString(),
                 task.Status.ToString()
             );
         }
-
 
         // Other methods...
     }

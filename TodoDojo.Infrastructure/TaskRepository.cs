@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TodoDojo.Domain;
-
-namespace TodoDojo.Infrastructure
+﻿namespace TodoDojo.Infrastructure
 {
     public class TaskRepository : ITaskRepository
     {
@@ -16,7 +9,7 @@ namespace TodoDojo.Infrastructure
             _context = context;
         }
 
-        public async Task<TaskItem?> GetByIdAsync(Guid id)
+        public async Task<TaskEntity?> GetByIdAsync(Guid id)
         {
             return await _context.TaskItems.FindAsync(id);
         }

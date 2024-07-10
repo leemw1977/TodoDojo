@@ -1,10 +1,8 @@
-﻿using TodoDojo.Domain;
-
-namespace TodoDojo.Infrastructure
+﻿namespace TodoDojo.Infrastructure
 {
     public interface ITaskRepository
     {
-        Task<TaskItem?> GetByIdAsync(Guid id);
+        Task<TaskEntity?> GetByIdAsync(Guid id);
         // Other repository methods...
     }
 }
