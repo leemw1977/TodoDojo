@@ -557,3 +557,6 @@ FodyWeavers.xsd
 # End of https://www.toptal.com/developers/gitignore/api/aspnetcore,visualstudio,visualstudiocode,react
 /CreatePersonalDatabase
 /TodoDojoServer/TodoDojoWeb.db
+/TodoDojoServer/TodoDojoWeb-og.db
+/TodoDojoServer/TodoDojoWeb.db-shm
+/TodoDojoServer/TodoDojoWeb.db-wal
