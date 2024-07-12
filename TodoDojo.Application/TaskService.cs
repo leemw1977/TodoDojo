@@ -1,4 +1,5 @@
-﻿using TodoDojo.Dtos;
+﻿using System.Threading.Tasks;
+using TodoDojo.Dtos;
 using TodoDojo.Infrastructure;
 
 namespace TodoDojo.Application
@@ -25,6 +26,18 @@ namespace TodoDojo.Application
             );
         }
 
-        // Other methods...
+        public async Task<IList<TaskDto>> GetAllOpenTasks()
+        {
+
+            var tasks = await _taskRepository.GetAllTasks();
+
+            return tasks.Select(t => new TaskDto(
+                t.Id,
+                t.TaskName,
+                t.Deadline ?? DateTime.UtcNow.AddDays(1),
+                t.Priority.ToString(),
+                t.Status.ToString()
+            )).ToList();
+        }
     }
 }
