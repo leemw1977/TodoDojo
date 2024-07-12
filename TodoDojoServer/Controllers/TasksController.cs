@@ -1,15 +1,25 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 using TodoDojo.Application;
 
 namespace TodoDojoServer.Controllers
 {
-    public class TaskController : ControllerBase
+    [Route("api/tasks")]
+    [ApiController]
+    public class TasksController : ControllerBase
     {
         private readonly ITaskService _taskService;
 
-        public TaskController(ITaskService taskService)
+        public TasksController(ITaskService taskService)
         {
             _taskService = taskService;
+        }
+
+        [HttpGet()]
+        public async Task<IActionResult> GetAllOpenTasks()
+        {
+            var tasks = await _taskService.GetAllOpenTasks();
+            return tasks == null ? NotFound() : Ok(tasks);
         }
 
         [HttpGet("{id}")]
@@ -19,6 +29,5 @@ namespace TodoDojoServer.Controllers
             return task == null ? NotFound() : Ok(task);
         }
 
-        // Other actions...
     }
 }

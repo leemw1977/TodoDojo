@@ -5,17 +5,17 @@ VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoDojoServer", "TodoDojoServer\TodoDojoServer.csproj", "{8C607D3F-5AEE-42F2-99EE-789CF5F8547B}"
 EndProject
-Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "todo-dojo-client", "todo-dojo-client\todo-dojo-client.esproj", "{BF3F07F8-7C4A-4ECC-A8CC-64542B11805E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoDojo.Domain", "TodoDojo.Domain\TodoDojo.Domain.csproj", "{D0CF1506-4442-4E8B-A928-1B6C2590C574}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoDojo.Domain", "TodoDojo.Domain\TodoDojo.Domain.csproj", "{D0CF1506-4442-4E8B-A928-1B6C2590C574}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoDojo.Application", "TodoDojo.Application\TodoDojo.Application.csproj", "{0DCA12CE-D57A-49B6-A9FB-CB13313CB4BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoDojo.Application", "TodoDojo.Application\TodoDojo.Application.csproj", "{0DCA12CE-D57A-49B6-A9FB-CB13313CB4BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoDojo.Infrastructure", "TodoDojo.Infrastructure\TodoDojo.Infrastructure.csproj", "{95479A1A-96EF-43BF-9982-7923FE6973B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoDojo.Infrastructure", "TodoDojo.Infrastructure\TodoDojo.Infrastructure.csproj", "{95479A1A-96EF-43BF-9982-7923FE6973B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoDojo.Dtos", "TodoDojo.Dtos\TodoDojo.Dtos.csproj", "{71D8A30D-E957-4C8D-B858-C14112A24C30}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoDojo.Dtos", "TodoDojo.Dtos\TodoDojo.Dtos.csproj", "{71D8A30D-E957-4C8D-B858-C14112A24C30}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreatePersonalDatabase", "CreatePersonalDatabase\CreatePersonalDatabase.csproj", "{D2014518-A72D-42D3-B2C3-B7838FC2E922}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreatePersonalDatabase", "CreatePersonalDatabase\CreatePersonalDatabase.csproj", "{D2014518-A72D-42D3-B2C3-B7838FC2E922}"
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "todo-dojo-client", "todo-dojo-client\todo-dojo-client.esproj", "{CBDFF6BA-7EE2-4F92-A13D-AD78A8211078}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,12 +27,6 @@ Global
 		{8C607D3F-5AEE-42F2-99EE-789CF5F8547B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C607D3F-5AEE-42F2-99EE-789CF5F8547B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C607D3F-5AEE-42F2-99EE-789CF5F8547B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BF3F07F8-7C4A-4ECC-A8CC-64542B11805E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BF3F07F8-7C4A-4ECC-A8CC-64542B11805E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BF3F07F8-7C4A-4ECC-A8CC-64542B11805E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{BF3F07F8-7C4A-4ECC-A8CC-64542B11805E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BF3F07F8-7C4A-4ECC-A8CC-64542B11805E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BF3F07F8-7C4A-4ECC-A8CC-64542B11805E}.Release|Any CPU.Deploy.0 = Release|Any CPU
 		{D0CF1506-4442-4E8B-A928-1B6C2590C574}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D0CF1506-4442-4E8B-A928-1B6C2590C574}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0CF1506-4442-4E8B-A928-1B6C2590C574}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -53,6 +47,12 @@ Global
 		{D2014518-A72D-42D3-B2C3-B7838FC2E922}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D2014518-A72D-42D3-B2C3-B7838FC2E922}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D2014518-A72D-42D3-B2C3-B7838FC2E922}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBDFF6BA-7EE2-4F92-A13D-AD78A8211078}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBDFF6BA-7EE2-4F92-A13D-AD78A8211078}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBDFF6BA-7EE2-4F92-A13D-AD78A8211078}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{CBDFF6BA-7EE2-4F92-A13D-AD78A8211078}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBDFF6BA-7EE2-4F92-A13D-AD78A8211078}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBDFF6BA-7EE2-4F92-A13D-AD78A8211078}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
