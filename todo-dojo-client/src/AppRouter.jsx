@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import TaskList from './components/task-list/TaskList';
+import TaskContainer from './components/TasksContainer/TasksContainer';
 //import About from './About';
 //import Contact from './Contact';
 
@@ -8,7 +8,7 @@ import TaskList from './components/task-list/TaskList';
 const AppRouter = () => {
     return (
         <Routes>
-            <Route path="/" element={<TaskList />} />
+            <Route path="/" element={<TaskContainer />} />
         </Routes>
     );
 };
